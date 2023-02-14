@@ -1,0 +1,2 @@
+# Script
+QuantumultX｜Surge｜Loon
