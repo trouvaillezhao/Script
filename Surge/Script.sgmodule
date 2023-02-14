@@ -20,41 +20,41 @@ DOMAIN-SUFFIX, openai.com,𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲
 DOMAIN, cdn.auth0.com,𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲
 DOMAIN, openaiapi-site.azureedge.net,𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲
 # > 苹果推送服务
-DOMAIN-KEYWORD, push.apple.com, direct
+DOMAIN-KEYWORD, push.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
 # > 苹果时间同步
-DOMAIN, time.apple.com, direct
+DOMAIN, time.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
 # > 苹果天气服务
-DOMAIN-KEYWORD, weather-edge.apple.com, direct
-DOMAIN-KEYWORD, weather-adge.apple.com, direct
-DOMAIN-KEYWORD, weather-data.apple.com, direct
-DOMAIN-KEYWORD, weather-map.apple.com, direct
-DOMAIN-KEYWORD, weather-analytics-events.apple.com, direct
+DOMAIN-KEYWORD, weather-edge.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD, weather-adge.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD, weather-data.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD, weather-map.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD, weather-analytics-events.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
 # > 苹果内购服务
-DOMAIN-KEYWORD, buy.itunes.apple.com, direct
+DOMAIN-KEYWORD, buy.itunes.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
 # > 苹果icloud
-DOMAIN-KEYWORD, icloud.com, direct
+DOMAIN-KEYWORD, icloud.com, 𝗗𝗜𝗥𝗘𝗖𝗧
 # > 苹果输入法相关服务
-DOMAIN-KEYWORD, api.smoot.apple.com, direct
-DOMAIN-KEYWORD, api.smoot.apple.cn, direct
+DOMAIN-KEYWORD, api.smoot.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD, api.smoot.apple.cn, 𝗗𝗜𝗥𝗘𝗖𝗧
 # > 苹果iMessage服务
-DOMAIN, init.ess.apple.com, direct
+DOMAIN, init.ess.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
 # > 苹果其他服务
-DOMAIN-KEYWORD, ssl.apple.com, direct
-DOMAIN-KEYWORD, humb.apple.com, direct
-DOMAIN, smp-device-content.apple.com, direct
-DOMAIN-KEYWORD, api-adservices.apple.com, direct
-DOMAIN-KEYWORD, ls.apple.com, direct
-DOMAIN-KEYWORD, gsa.apple.com, direct
-DOMAIN-KEYWORD, ess.apple.com, direct
+DOMAIN-KEYWORD, ssl.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD, humb.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN, smp-device-content.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD, api-adservices.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD, ls.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD, gsa.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD, ess.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
 # > QQ空间
-DOMAIN-KEYWORD, ctc.qzs.qzone.qq.com, direct
+DOMAIN-KEYWORD, ctc.qzs.qzone.qq.com, 𝗗𝗜𝗥𝗘𝗖𝗧
 # > 路由器后台
-IP-CIDR, 192.168.0.1/24, direct,no-resolve
+IP-CIDR, 192.168.0.1/24, 𝗗𝗜𝗥𝗘𝗖𝗧,no-resolve
 # > 天翼网关
-IP-CIDR, 192.168.1.1/24, direct,no-resolve
+IP-CIDR, 192.168.1.1/24, 𝗗𝗜𝗥𝗘𝗖𝗧,no-resolve
 # > 其他分流修正
-DOMAIN-KEYWORD, anti-ad.net, direct
-DOMAIN, ad.12306.cn, direct
+DOMAIN-KEYWORD, anti-ad.net, 𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN, ad.12306.cn, 𝗗𝗜𝗥𝗘𝗖𝗧
 # > Siri与搜索 代理
 PROCESS-NAME,LookupViewService,𝗣𝗥𝗢𝗫𝗬
 PROCESS-NAME,/System/Library/PrivateFrameworks/Lookup.framework/Versions/A/XPCServices/LookupViewService.xpc/Contents/MacOS/LookupViewService,𝗣𝗥𝗢𝗫𝗬
