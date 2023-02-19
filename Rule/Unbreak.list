@@ -24,6 +24,16 @@ DOMAIN,alt5-mtalk.google.com
 DOMAIN,alt6-mtalk.google.com
 DOMAIN,alt7-mtalk.google.com
 DOMAIN,alt8-mtalk.google.com
+# > Microsoft
+USER-AGENT,Microsoft%20Remote%20Desktop*
+DOMAIN-SUFFIX,msftconnecttest.com
+DOMAIN-SUFFIX,windows.com
+DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,windowsupdate.com
+DOMAIN-SUFFIX,xbox.com
+DOMAIN-SUFFIX,xboxlive.com
+# > Mugglepay
+DOMAIN-SUFFIX,invoice.mugglepay.com
 # >> Paramount+
 # DOMAIN,pubads.g.doubleclick.net
 # > Tencent
@@ -36,7 +46,53 @@ DOMAIN,analytics.strava.com
 # > Umeng
 DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
-
+# > UUBooster
+PROCESS-NAME,UUBooster
+# > WiFiman
+DOMAIN-SUFFIX,app-measurement.com
+# > Xunlei
+USER-AGENT,%E8%BF%85%E9%9B%B7
+DOMAIN-SUFFIX,xunlei.com
+# > Download
+PROCESS-NAME,aria2c
+PROCESS-NAME,fdm
+PROCESS-NAME,Folx
+PROCESS-NAME,NetTransport
+PROCESS-NAME,qbittorrent
+PROCESS-NAME,qbittorrent-nox
+PROCESS-NAME,Thunder
+PROCESS-NAME,Transmission
+PROCESS-NAME,uTorrent
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrent Helper
+# > Private Tracker
+DOMAIN-SUFFIX,audiences.me
+DOMAIN-SUFFIX,awesome-hd.me
+DOMAIN-SUFFIX,broadcasthe.net
+DOMAIN-SUFFIX,chdbits.co
+DOMAIN-SUFFIX,classix-unlimited.co.uk
+DOMAIN-SUFFIX,dmhy.best
+DOMAIN-SUFFIX,empornium.me
+DOMAIN-SUFFIX,gazellegames.net
+DOMAIN-SUFFIX,hdchina.org
+DOMAIN-SUFFIX,hdsky.me
+DOMAIN-SUFFIX,icetorrent.org
+DOMAIN-SUFFIX,jpopsuki.eu
+DOMAIN-SUFFIX,keepfrds.com
+DOMAIN-SUFFIX,madsrevolution.net
+DOMAIN-SUFFIX,m-team.cc
+DOMAIN-SUFFIX,nanyangpt.com
+DOMAIN-SUFFIX,ncore.cc
+DOMAIN-SUFFIX,open.cd
+DOMAIN-SUFFIX,ourbits.club
+DOMAIN-SUFFIX,passthepopcorn.me
+DOMAIN-SUFFIX,privatehd.to
+DOMAIN-SUFFIX,redacted.ch
+DOMAIN-SUFFIX,springsunday.net
+DOMAIN-SUFFIX,tjupt.org
+DOMAIN-SUFFIX,totheglory.im
+# > UBI
+DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
 
 
 # > 苹果推送服务
