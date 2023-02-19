@@ -122,11 +122,8 @@ DOMAIN-KEYWORD, api-adservices.apple.com
 DOMAIN-KEYWORD, ls.apple.com
 DOMAIN-KEYWORD, gsa.apple.com
 DOMAIN-KEYWORD, ess.apple.com
-
 # > QQ空间
 DOMAIN-KEYWORD, ctc.qzs.qzone.qq.com
-
 # > 其他分流修正
 DOMAIN-KEYWORD, anti-ad.net
-
 DOMAIN, ad.12306.cn
