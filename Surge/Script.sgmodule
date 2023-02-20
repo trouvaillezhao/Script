@@ -19,42 +19,36 @@ force-http-engine-hosts = %APPEND% boxjs.net, boxjs.com
 DOMAIN-SUFFIX, openai.com,𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲
 DOMAIN, cdn.auth0.com,𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲
 DOMAIN, openaiapi-site.azureedge.net,𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲
-# > 苹果推送服务
-DOMAIN-KEYWORD, push.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-# > 苹果时间同步
-DOMAIN, time.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-# > 苹果天气服务
-DOMAIN-KEYWORD, weather-edge.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN-KEYWORD, weather-adge.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN-KEYWORD, weather-data.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN-KEYWORD, weather-map.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN-KEYWORD, weather-analytics-events.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-# > 苹果内购服务
-DOMAIN-KEYWORD, buy.itunes.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-# > 苹果icloud
-DOMAIN-KEYWORD, icloud.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-# > 苹果输入法相关服务
-DOMAIN-KEYWORD, api.smoot.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN-KEYWORD, api.smoot.apple.cn, 𝗗𝗜𝗥𝗘𝗖𝗧
-# > 苹果iMessage服务
-DOMAIN, init.ess.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-# > 苹果其他服务
-DOMAIN-KEYWORD, ssl.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN-KEYWORD, humb.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN, smp-device-content.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN-KEYWORD, api-adservices.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN-KEYWORD, ls.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN-KEYWORD, gsa.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN-KEYWORD, ess.apple.com, 𝗗𝗜𝗥𝗘𝗖𝗧
-# > QQ空间
-DOMAIN-KEYWORD, ctc.qzs.qzone.qq.com, 𝗗𝗜𝗥𝗘𝗖𝗧
+# > Apple CDN
+PROCESS-NAME,storedownloadd,𝗔𝗽𝗽𝗹𝗲
+USER-AGENT,com.apple.appstored*,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,aod.itunes.apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,api.smoot.apple.cn,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,appldnld.apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,apptrailers.itunes.apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,gs-loc-cn.apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,hls.itunes.apple.com.mwcname.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,hls.itunes.apple.com.mwcname.com.cd23f.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,k128-iosapps-all.gslb.ksyuncdn.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,iosapps.itunes.apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,iosapps.itunes.g.aaplimg.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,iosapps.itunes.apple.com.download.ks-cdn.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,iosapps.itunes.apple.com.m.alikunlun.net,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,music.apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,mvod.itunes.apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,osxapps.itunes.apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,supportdownload.apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,swcdn.apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,updates.cdn-apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN,updates-http.cdn-apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN-SUFFIX,ls.apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN-SUFFIX,mzstatic.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN-SUFFIX,store.apple.com,𝗔𝗽𝗽𝗹𝗲
+DOMAIN-SUFFIX,apps.apple.com,𝗔𝗽𝗽𝗹𝗲
 # > 路由器后台
 IP-CIDR, 192.168.0.1/24, 𝗗𝗜𝗥𝗘𝗖𝗧,no-resolve
 # > 天翼网关
 IP-CIDR, 192.168.1.1/24, 𝗗𝗜𝗥𝗘𝗖𝗧,no-resolve
-# > 其他分流修正
-DOMAIN-KEYWORD, anti-ad.net, 𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN, ad.12306.cn, 𝗗𝗜𝗥𝗘𝗖𝗧
 # > Siri与搜索 代理
 PROCESS-NAME,LookupViewService,𝗣𝗥𝗢𝗫𝗬
 PROCESS-NAME,/System/Library/PrivateFrameworks/Lookup.framework/Versions/A/XPCServices/LookupViewService.xpc/Contents/MacOS/LookupViewService,𝗣𝗥𝗢𝗫𝗬
