@@ -142,7 +142,7 @@ DOMAIN-SUFFIX,totheglory.im
 # > UBI
 DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
 
-fenliuxiuzheng come from:https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list
+#fenliuxiuzheng come from:https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list
 # > 苹果推送服务
 DOMAIN-KEYWORD, push.apple.com
 # > 苹果时间同步
