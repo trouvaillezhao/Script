@@ -7,14 +7,14 @@ const bw = {
     url: "https://chabaidao-gateway2.shuxinyc.com/marketing/minip/activity/joinActivity",
     headers: {
         "Accept": "*/*",
-        'Host': `chabaidao-gateway2.shuxinyc.com`,
-        'Connection': `keep-alive`,
-        'Content-Length': '352',
-        'CSESSION': cbdtoken,
-        'Content-Type': "application/json",
-        'Accept-Encoding': `gzip,compress,br,deflate`,
-        'User-Agent': `Mozilla/5.0`,
-        'Referer': `https://servicewechat.com/wx2804355dbf8d15c3/485/page-frame.html`
+        "Host": "chabaidao-gateway2.shuxinyc.com",
+        "Connection": "keep-alive",
+        "Content-Length": "352",
+        "CSESSION": cbdtoken,
+        "Content-Type": "application/json",
+        "Accept-Encoding": "gzip,compress,br,deflate",
+        "User-Agent": "Mozilla/5.0",
+        "Referer": "https://servicewechat.com/wx2804355dbf8d15c3/485/page-frame.html"
     },
     body: cbdbody,
 };
