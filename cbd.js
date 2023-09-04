@@ -10,7 +10,6 @@ const bw = {
         'Host': `chabaidao-gateway2.shuxinyc.com`,
         'Connection': `keep-alive`,
         'Content-Length': '352',
-        'versionName': 'v1.8.29',
         'CSESSION': cbdtoken,
         'Content-Type': "application/json",
         'Accept-Encoding': `gzip,compress,br,deflate`,
