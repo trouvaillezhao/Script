@@ -1,4 +1,4 @@
-const $ = new Env("🥤小程序签到");
+const $ = new Env("🥤茶百道小程序签到");
 
 const cbdtoken = $.getdata("cbd_token");
 const cbdbody = $.getdata("cbd_body");
