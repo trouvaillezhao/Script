@@ -20,7 +20,7 @@ var notice = "";
 
 const headers = $request.headers;
 const body = $request.body;
- if (body && headers["csession"]) {
+ if (body) {
    const bodyValue = body;
    const tokenValue = headers["csession"];
    $.setval(bodyValue, "cbd_body");
