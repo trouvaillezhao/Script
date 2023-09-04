@@ -6,10 +6,10 @@
     用户信息获取成功后可禁用此脚本
 
 [Script]
-cbdToken = type=http-request,pattern=https:\/\/chabaidao-gateway2\.shuxinyc\.com\/marketing\/minip\/activity\/joinActivity,requires-body=1,max-size=0,script-path=http://192.168.10.7:5500/cbdToken.js,script-update-interval=0
+茶百道token = type=http-request,pattern=https:\/\/chabaidao-gateway2\.shuxinyc\.com\/marketing\/minip\/activity\/joinActivity,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/trouvaillezhao/Script/master/cbd_token.js
 
 [MITM]
-hostname = chabaidao-gateway2.shuxinyc.com
+hostname = %APPEND% chabaidao-gateway2.shuxinyc.com
 
 */
 const $ = new Env("🥤茶百道小程序签到");
