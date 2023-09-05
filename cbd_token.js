@@ -1,30 +1,38 @@
 /* 
 
-脚本功能: 获取茶百道小程序Tokenn和RequestBody
+脚本功能: 获取茶百道小程序Csession和RequestBody
 用户信息获取方式: 
     微信茶百道小程序 --> 我的 --> 底部签到 --> 签到
     用户信息获取成功后可禁用此脚本
 
 [Script]
-茶百道token = type=http-request,pattern=https:\/\/chabaidao-gateway2\.shuxinyc\.com\/marketing\/minip\/activity\/joinActivity,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/trouvaillezhao/Script/master/cbd_token.js
+cbdToken = type=http-request,pattern=https:\/\/chabaidao-gateway2\.shuxinyc\.com\/marketing\/minip\/activity\/queryDetail,requires-body=1,max-size=0,script-path=http://192.168.10.7:5500/cbdToken.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% chabaidao-gateway2.shuxinyc.com
+hostname = chabaidao-gateway2.shuxinyc.com
 
 */
 const $ = new Env("🥤茶百道小程序签到");
 const url = $request.url;
-const cbdoken = $.getdata("cbd_token") ? $.getdata("cbd_token") : "";
-const cbdbody = $.getdata("cbd_body") ? $.getdata("cbd_body") : "";
+const cbdToken = $.getdata("cbd_token") ? $.getdata("cbd_token") : "";
+const cbdid = $.getdata("cbd_id") ? $.getdata("cbd_id") : "";
+const cbdgroupId = $.getdata("cbd_groupId") ? $.getdata("cbd_groupId") : "";
 var notice = "";
 
 const headers = $request.headers;
 const body = $request.body;
- if (body && headers["csession"]) {
-   const bodyValue = body;
+ if (body && headers) {
+   const bodyValue = $.toObj(body);
+   console.log(bodyValue);
+   console.log(bodyValue.id);
+   console.log(bodyValue.groupId);
    const tokenValue = headers["csession"];
-   $.setval(bodyValue, "cbd_body");
-   $.setval(tokenValue, "cbd_token");
+   $.setdata(tokenValue, "cbd_token");
+   $.setdata(bodyValue["id"], "cbd_id");
+   $.setdata(bodyValue["groupId"], "cbd_groupId");
+  //  console.log(tokenValue);
+  //  console.log(cbdid);
+  //  console.log(cbdgroupId);
    notice += "🎉用户信息获取成功！\n";
  } else {
    notice += "❌用户信息获取失败！\n";
