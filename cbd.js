@@ -1,7 +1,8 @@
 const $ = new Env("🥤茶百道小程序签到");
 
 const cbdtoken = $.getdata("cbd_token");
-const cbdbody = $.getdata("cbd_body");
+const cbdid = $.getdata("cbd_id");
+const cbdgroupId = $.getdata("cbd_groupId");
 
 const bw = {
     url: "https://chabaidao-gateway2.shuxinyc.com/marketing/minip/activity/joinActivity",
@@ -16,7 +17,11 @@ const bw = {
         "User-Agent": "Mozilla/5.0",
         "Referer": "https://servicewechat.com/wx2804355dbf8d15c3/485/page-frame.html"
     },
-    body: cbdbody,
+    body: {
+        "token":cbdtoken,
+        "id":cbdid,
+        "groupId":cbdgroupId
+    },
 };
 !(async () => {
     try {
