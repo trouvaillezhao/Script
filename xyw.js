@@ -27,8 +27,8 @@ async function is_authed() {
       $.log("🟡正在判断是否已经认证");
       $.log(resp.body);
       const result = JSON.parse(resp.body);
-      $.log(result.body);
-      $.log(result.body.result);
+      $.log(JSON.parse(resp.body));
+      //$.log(result.body.result);
       // if (resp.status !== 200) {
       //   $.log("🔴认证失败");
       //   return false;
