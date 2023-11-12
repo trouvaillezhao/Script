@@ -31,13 +31,13 @@ async function is_authed() {
         return false;
       } else {
         const result = JSON.parse(resp.body);
-        $.log(result);
-        $.log(result.body.result);
-        if (result.body.result !== 'fail') {
-          $.log("🎉认证成功");
-        } else {
-          $.log("❌认证失败");
-        }
+        $.log(result.body);
+        // $.log(result.body.result);
+        // if (result.body.result !== 'fail') {
+        //   $.log("🎉认证成功");
+        // } else {
+        //   $.log("❌认证失败");
+        // }
         return result !== 'fail';
       }
     });
