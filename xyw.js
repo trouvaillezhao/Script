@@ -23,7 +23,7 @@ async function is_authed() {
     let options = {
       url: `http://172.208.2.102/eportal/InterFace.do?method=getOnlineUserInfo`,
     };
-    return $.http.get(options,{ timeout: 3000 }).then((resp) => {
+    return $.http.get(options).then((resp) => {
       $.log("🟡正在判断是否已经认证");
       // $.log(resp.body);
       if (resp.status !== 200) {
@@ -31,10 +31,9 @@ async function is_authed() {
         return false;
       } else {
         const result = JSON.parse(resp.body);
-        //$.log(result);
-        result = resp.body.result;
-        //$.log(result);
-        if (result !== 'fail') {
+        $.log(result);
+        $.log(result.body.result);
+        if (result.body.result !== 'fail') {
           $.log("🎉认证成功");
         } else {
           $.log("❌认证失败");
