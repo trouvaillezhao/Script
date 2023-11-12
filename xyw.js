@@ -31,9 +31,9 @@ async function is_authed() {
         return false;
       } else {
         const result = JSON.parse(resp.body);
-        $.log(result);
+        //$.log(result);
         result = resp.body.result;
-        $.log(result);
+        //$.log(result);
         if (result !== 'fail') {
           $.log("🎉认证成功");
         } else {
